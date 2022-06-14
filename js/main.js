@@ -27,9 +27,16 @@ function mostrarmenu(){
 
 function quitarmenu(){
     nav.style.left = "-1000px"
-    sombra.style.display ="inline"
+    sombra.style.display ="none"
 
 }
+
+
+const preloader = document.querySelector(".loader");
+
+window.addEventListener("load" , () => {
+    preloader.style.display = "none";
+});
 
 
 
