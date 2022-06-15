@@ -31,16 +31,17 @@ html {
 }
 
 body::-webkit-scrollbar {
-    width: 7px;
-    background-color: #151f3000;
+    background:transparent;
+    width: 5px; 
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--color__naranja);
-    border-radius: 50rem;
-    margin: 2rem;
-    border-right: var(--color__tema);
+    background-color: var(--btn);
+    border-radius: 10px;
+}
 
+body::-webkit-scrollbar-corner{
+    border-radius: 10px;
 }
 
 :root {
@@ -54,7 +55,12 @@ body::-webkit-scrollbar-thumb {
     --naranja:#FF8C33;
 }
 
-
+.wave{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: #ffffff;
+}
 
 a {
     text-decoration: none;
@@ -77,6 +83,10 @@ overflow: hidden;
 }
 
 .txt-loader h2{
+    margin: 0;
+}
+
+.txt-loader h2{
     text-align: right;
 }
 
@@ -94,8 +104,9 @@ overflow: hidden;
 justify-content: center;
 align-items: center;
 z-index: 9999999;
-background: rgb(15,25,60);
-background: radial-gradient(circle, rgba(15,25,60,1) 0%, rgba(6,12,33,1) 100%);
+/* background: rgb(15,25,60);
+background: radial-gradient(circle, rgba(15,25,60,1) 0%, rgba(6,12,33,1) 100%); */
+background-color: black;
 }
 
 
@@ -110,8 +121,7 @@ background: radial-gradient(circle, rgba(15,25,60,1) 0%, rgba(6,12,33,1) 100%);
     width: 0.5rem;
     margin: 0.2rem;
     background-color: var(--btn);
-    display: block;
-    
+    display: block; 
     left: 0;
     top: 0;
     border-radius: 50rem;
@@ -138,6 +148,8 @@ background: radial-gradient(circle, rgba(15,25,60,1) 0%, rgba(6,12,33,1) 100%);
     animation-delay:0.3s ;
 }
 
+
+
 @keyframes preloader{
     0%,
     75%,  
@@ -161,7 +173,8 @@ background: radial-gradient(circle, rgba(15,25,60,1) 0%, rgba(6,12,33,1) 100%);
         background-image: url(../img/Innova.svg);
         background-position: center center;
         background-size: cover;
-        height: 30rem;
+        height: 40rem;
+        position: relative;
     }
     
     /* .img img{
@@ -769,6 +782,12 @@ margin-bottom: 1rem;
         width: 100%;
         
     }
+
+    .int{
+        color: var(--text);
+        text-align: left;
+        margin-bottom:11rem;
+    }
 }
 
 @media screen and (min-width: 580px){
@@ -798,6 +817,12 @@ margin-bottom: 1rem;
      .img{
         height: 40rem;
     }
+
+    .int{
+        color: var(--text);
+        text-align: center;
+        margin-bottom:11rem;
+    }
 } 
 
 @media screen and (min-width: 700px){
@@ -809,6 +834,12 @@ margin-bottom: 1rem;
     .flex-caption .descripcion{
         font-size: 2.5rem;
         top: 50%;
+    }
+
+    .int{
+        color: var(--text);
+        text-align: left;
+        margin-bottom:11rem;
     }
 }
 
@@ -844,7 +875,7 @@ margin-bottom: 1rem;
     }
 
     .barra_nav .enlaces ul li a{
-        color: white;
+        color: #ffffff;
         font-weight: 100;
     }
 
@@ -866,9 +897,28 @@ margin-bottom: 1rem;
     .nav_mod .barra_nav .enlaces ul li a{
         color: var(--text);
     }
+
+    .int{
+        color: var(--text);
+        text-align: left;
+        margin-bottom:11rem;
+    }
 }
 
 @media screen and (min-width: 1200px){
+
+    .int{
+        color: var(--text);
+        text-align: center;
+        margin-bottom:11rem;
+    }
+
+    .int-redes{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
 
     .m-v{
         display: grid;
@@ -890,7 +940,7 @@ margin-bottom: 1rem;
         background-image: url(../img/b2.svg);
         background-position:center;
         background-size: cover;
-        height: 55rem;
+        height: 75rem;
     }
 
     .tecnologias{
@@ -1022,6 +1072,14 @@ margin-bottom: 1rem;
 
     
 }
+
+/* .bk{
+    background-image: url(../img/bk3.svg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    
+} */
 
 .barra_nav .enlaces ul li .enlace-actual{
     font-weight: 500;
