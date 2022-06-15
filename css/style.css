@@ -170,11 +170,12 @@ background-color: black;
 @media screen and (min-width: 315px) {
 
     .img{
-        background-image: url(../img/Innova.svg);
+        /* background-image: url(../img/Innova.svg);
         background-position: center center;
         background-size: cover;
         height: 40rem;
-        position: relative;
+        position: relative; */
+        background-color: white;
     }
     
     /* .img img{
@@ -945,6 +946,8 @@ margin-bottom: 1rem;
         align-items: center;
     }
 
+    
+
     .m-v .texto-cuerpo{
         width: 100%;
     }
@@ -955,10 +958,11 @@ margin-bottom: 1rem;
     }
     
     .img{
-        background-image: url(../img/b2.svg);
+        /* background-image: url(../img/b2.svg);
         background-position:center;
         background-size: cover;
-        height: 75rem;
+        height: 75rem; */
+        background-color: white;
     }
 
     .tecnologias{
